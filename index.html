@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about" onclick="scrollToSection(about)">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#job-container" onclick="scrollToSection(job-container)">Experience</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Welcome!</p>
+                <h1> Hi, I'm <span>Victoria Li</span></h1>
+            </div>
+    </div>
+
+<!--------- about -------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        This is a paragraph of text. Insert link.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<!---This is a paragraph of text. You can visit <a href="another-page.html">another page</a> on our website.--->
+
+<!--------- portfolio -------->
+
+<div id="job-container">
+    <h1 class="title-experience">Experience</h1>
+    <div class="job-header">Your Job Title</div>
+    <div class="job-date">Date (e.g., January 2022 - Present)</div>
+    <ul class="job-experience">
+      <li>Work experience point 1.</li>
+      <li>Work experience point 2.</li>
+      <!-- Add more points as needed -->
+    </ul>
+
+    <div class="job-header">Your Job Title 2</div>
+    <div class="job-date">Date (e.g., January 2022 - Present)</div>
+    <ul class="job-experience">
+      <li>Work experience point 1.</li>
+      <li>Work experience point 2.</li>
+      <!-- Add more points as needed -->
+    </ul>
+
+    <div class="job-header">Your Job Title 3</div>
+    <div class="job-date">Date (e.g., January 2022 - Present)</div>
+    <ul class="job-experience">
+      <li>Work experience point 1.</li>
+      <li>Work experience point 2.</li>
+      <!-- Add more points as needed -->
+    </ul>
+
+    <div class="job-header">Your Job Title 4</div>
+    <div class="job-date">Date (e.g., January 2022 - Present)</div>
+    <ul class="job-experience">
+      <li>Work experience point 1.</li>
+      <li>Work experience point 2.</li>
+      <!-- Add more points as needed -->
+    </ul>
+
+    <div class="job-header">Your Job Title 5</div>
+    <div class="job-date">Date (e.g., January 2022 - Present)</div>
+    <ul class="job-experience">
+      <li>Work experience point 1.</li>
+      <li>Work experience point 2.</li>
+      <!-- Add more points as needed -->
+    </ul>
+
+    <div class="job-header">Your Job Title</div>
+    <div class="job-date">Date (e.g., January 2022 - Present)</div>
+    <ul class="job-experience">
+      <li>Work experience point 1.</li>
+      <li>Work experience point 2.</li>
+      <!-- Add more points as needed -->
+    </ul>
+
+    <div class="job-header">Your Job Title</div>
+    <div class="job-date">Date (e.g., January 2022 - Present)</div>
+    <ul class="job-experience">
+      <li>Work experience point 1.</li>
+      <li>Work experience point 2.</li>
+      <!-- Add more points as needed -->
+    </ul>
+
+    <div class="job-header">Your Job Title</div>
+    <div class="job-date">Date (e.g., January 2022 - Present)</div>
+    <ul class="job-experience">
+      <li>Work experience point 1.</li>
+      <li>Work experience point 2.</li>
+      <!-- Add more points as needed -->
+    </ul>
+
+    <div class="job-header">Your Job Title</div>
+    <div class="job-date">Date (e.g., January 2022 - Present)</div>
+    <ul class="job-experience">
+      <li>Work experience point 1.</li>
+      <li>Work experience point 2.</li>
+      <!-- Add more points as needed -->
+    </ul>
+  </div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    function scrollToSection(sectionId) {
+      var targetSection = document.getElementById(sectionId);
+  
+      // Using the smooth scroll behavior for a smooth scrolling effect
+      targetSection.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
+
+
+</body>
+</html>
