@@ -220,11 +220,21 @@ body.scrolling button {
 
 /*-------- contact --------*/
 
-.contact-left {
-  flex-basis: 35%;
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the container */
 }
+
+.contact-left {
+  flex-basis: 45%; /* Adjust the width as needed */
+  text-align: left;
+}
+
 .contact-right {
-  flex-basis: 60%;
+  flex-basis: 45%; /* Adjust the width as needed */
+  text-align: right;
 }
 
 #contact {
