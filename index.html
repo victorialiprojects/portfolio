@@ -14,8 +14,9 @@
                 <img src="images/logo.jpg" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#" onclick="scrollToSection(about)">About</a></li>
-                    <li><a href="#" onclick="scrollToSection(job-container)">Experience</a></li>
+                    <li><a href="#" onclick="scrollToSection('about')">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#" onclick="scrollToSection('job-container')">Experience</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
@@ -48,6 +49,8 @@
         </div>
     </div>
 <!---This is a paragraph of text. You can visit <a href="another-page.html">another page</a> on our website.--->
+
+
 
 <!--------- portfolio -------->
 
@@ -102,28 +105,30 @@
       <!-- Add more points as needed -->
     </ul>
 
+    <div class="job-header">Your Job Title</div>
+    <div class="job-date">Date (e.g., January 2022 - Present)</div>
+    <ul class="job-experience">
+      <li>Work experience point 1.</li>
+      <li>Work experience point 2.</li>
+      <!-- Add more points as needed -->
+    </ul>
   </div>
 
-<!--------- contact -------->
+
+<!-- Contact -->
 <div id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="contact-left">
-        <h1 class="sub-title">Contact Me</h1>
-        <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
-        <p><i class="fa-solid fa-square-phone"></i> 0123456789</p>
-        <div class="social-icons">
-
-        </div>
-      </div>
-      <div class="contact-right">
-        
-      </div>
+    <h1 class="title-experience">Contact Me</h1>
+    <div class="center-container">
+        <div class="badge-base LI-profile-badge" data-locale="nl_NL" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="jasper-geijsberts" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://nl.linkedin.com/in/jasper-geijsberts?trk=profile-badge"></a></div>
+              
     </div>
-  </div>
 </div>
 
 
+<button onclick="scrollToTop()">Go to Top</button>
+
+
+<!-- SCRIPTS -->
 
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
@@ -153,7 +158,18 @@
     }
   </script>
 
+<script>
+// Function to scroll to the top
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+</script>
 
+
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
 </body>
 </html>
