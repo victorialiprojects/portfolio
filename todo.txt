@@ -1,0 +1,4 @@
+- change icon image versions (fontawesome) to most recent
+- add Linkedin interactive profile
+- 1:38 - finish the responsive page section
+- finish contact section
