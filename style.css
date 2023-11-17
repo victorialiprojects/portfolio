@@ -4,9 +4,9 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
-body {
-  background: #010123;
-  color: #fff;
+body{
+    background: #080808;
+    color: #fff;
 }
 #header {
   width: 100%;
