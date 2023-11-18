@@ -1,4 +1,7 @@
 - change icon image versions (fontawesome) to most recent
-- add Linkedin interactive profile
-- 1:38 - finish the responsive page section
 - finish contact section
+    - email interactive link
+    - make it responsive for small screens
+- add my-cv.pdf
+- fix bug where in small screen, clicking the menu options twice takes you to the top of the page
+- colour scheme
