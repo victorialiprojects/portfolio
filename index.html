@@ -41,15 +41,20 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>
-                        This is a paragraph of text. Insert link.
+                        Back in 2019, I recreated one of my favourite Messenger games in my high school 
+                        computer science class using Java. Since then, I've pursued Engineering 
+                        at the University of Waterloo, and I am set to <strong> graduate in May 2024 with my 
+                        Bachelors of Applied Science. </strong> 
+                        <br><br>
+                        My past software co-ops have provided me with experience in designing, developing, fixing, and 
+                        testing code. 
+                        <br><br>
                     </p>
                     
                 </div>
             </div>
         </div>
     </div>
-<!---This is a paragraph of text. You can visit <a href="another-page.html">another page</a> on our website.--->
-
 
 
 <!--------- portfolio -------->
@@ -112,40 +117,60 @@
       <div class="bubble"> SQL </div>
     </div>
 
-    <div class="job-date">Date (e.g., January 2022 - Present)</div>
-    <div class="job-header">Your Job Title</div>
+    <div class="blank"></div>
+    <div class="job-date">Feb 2023 - Aug 2023</div>
+    <div class="job-header1">Your Job Title</div>
     <ul class="job-experience">
-      <li>Work experience point 1.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua.</li>
       <li>Work experience point 2.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua.</li>
       <!-- Add more points as needed -->
+    
     </ul>
+    <div id = "bubble-container">
+      <div class="bubble"> Java </div>
+      <div class="bubble"> Docker </div>
+      <div class="bubble"> Scripting (Python) </div>
+      <div class="bubble"> SQL </div>
+    </div>
 
-    <div class="job-date">Date (e.g., January 2022 - Present)</div>
-    <div class="job-header">Your Job Title</div>
+    <div class="blank"></div>
+    <div class="job-date">Feb 2023 - Aug 2023</div>
+    <div class="job-header1">Your Job Title</div>
     <ul class="job-experience">
-      <li>Work experience point 1.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua.</li>
       <li>Work experience point 2.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua.</li>
       <!-- Add more points as needed -->
+    
     </ul>
-
-    <div class="job-date">Date (e.g., January 2022 - Present)</div>
-    <div class="job-header">Your Job Title</div>
-    <ul class="job-experience">
-      <li>Work experience point 1.</li>
-      <li>Work experience point 2.</li>
-      <!-- Add more points as needed -->
-    </ul>
+    <div id = "bubble-container">
+      <div class="bubble"> Java </div>
+      <div class="bubble"> Docker </div>
+      <div class="bubble"> Scripting (Python) </div>
+      <div class="bubble"> SQL </div>
+    </div>
 
   </div>
 
 <!--------- contact -------->
 <div id="contact">
   <div class="container">
+    <h1 class="sub-title-contact">Contact Me</h1>
     <div class="flex-container">
       <div class="contact-left">
-        <h1 class="sub-title">Contact Me</h1>
-        <p><i class="fas fa-paper-plane"></i> livictoria911@gmail.com</p>
-        <p><i class="fas fa-phone"></i> 647-517-2938</p>
+        <div class="con">
+          <i class="fas fa-paper-plane"></i>
+          <span class="text"> <a href="mailto:v42li@uwaterloo.ca" style="color: white;">v42li@uwaterloo.ca</a></span>
+        </div>
+        <div class="con2">
+          <i class="fas fa-phone"></i>
+          <span class="text"> 647-517-2938</span>
+        </div>
         <a href="images/my-cv.pdf" download class="btn btn2">Download Resume/CV</a>
       </div>
       
@@ -156,8 +181,10 @@
   </div>
 </div>
 
-<button onclick="scrollToTop()">Go to Top</button>
-
+<div class="icon-container" style="display: none;">
+  <i class="fas fa-arrow-circle-up" onclick=scrollToTop()></i>
+  <span class="text">Go to Top</span>
+</div>
 
 <!-- SCRIPTS -->
 
@@ -211,6 +238,21 @@ function scrollToTop() {
 
 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
+<script>
+function showOnScroll() {
+  var hiddenDivs = document.querySelectorAll('.icon-container');
+  for (var i = 0; i < hiddenDivs.length; i++) {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      hiddenDivs[i].style.display = 'block'; // Show the element
+    } else {
+      hiddenDivs[i].style.display = 'none'; // Hide the element
+    }
+  }
+}
+
+// Add event listener for scroll events
+window.addEventListener('scroll', showOnScroll);
+</script>
 
 </body>
 </html>
