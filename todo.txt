@@ -1,0 +1,4 @@
+- change icon image versions (fontawesome) to most recent
+- add my-cv.pdf
+- fix bug where in small screen, clicking the menu options twice takes you to the top of the page
+- colour scheme

@@ -6,23 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap">
 </head>
 <body>
+  <div class="highlighted-section"></div>
     <div id="header">
         <div class="container">
             <nav>
                 <img src="images/logo.jpg" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about" onclick="scrollToSection(about)">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#job-container" onclick="scrollToSection(job-container)">Experience</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+                <ul id="sidemenu">
+                    <li><a href="#" onclick="scrollToSection('about')">About</a></li>
+                    <li><a href="#" onclick="scrollToSection('job-container')">Experience</a></li>
+                    <li><a href="#" onclick="scrollToSection('contact')">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                  </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Welcome!</p>
                 <h1> Hi, I'm <span>Victoria Li</span></h1>
+                <p> Biomedical Engineer w/ Software Background</p>
             </div>
     </div>
 
@@ -37,109 +41,179 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>
-                        This is a paragraph of text. Insert link.
+                        Back in 2019, I recreated one of my favourite Messenger games in my high school 
+                        computer science class using Java. Since then, I've pursued Engineering 
+                        at the University of Waterloo, and I am set to <strong> graduate in May 2024 with my 
+                        Bachelors of Applied Science. </strong> 
+                        <br><br>
+                        My past software co-ops have provided me with experience in designing, developing, fixing, and 
+                        testing code. 
+                        <br><br>
                     </p>
                     
                 </div>
             </div>
         </div>
     </div>
-<!---This is a paragraph of text. You can visit <a href="another-page.html">another page</a> on our website.--->
+
 
 <!--------- portfolio -------->
 
 <div id="job-container">
     <h1 class="title-experience">Experience</h1>
-    <div class="job-header">Your Job Title</div>
-    <div class="job-date">Date (e.g., January 2022 - Present)</div>
+    <div class="job-date">Feb 2023 - Aug 2023</div>
+    <div class="job-header1">Your Job Title</div>
     <ul class="job-experience">
-      <li>Work experience point 1.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua.</li>
       <li>Work experience point 2.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua.</li>
       <!-- Add more points as needed -->
+    
     </ul>
+    <div id = "bubble-container">
+      <div class="bubble"> Java </div>
+      <div class="bubble"> Docker </div>
+      <div class="bubble"> Scripting (Python) </div>
+      <div class="bubble"> SQL </div>
+    </div>
 
-    <div class="job-header">Your Job Title 2</div>
-    <div class="job-date">Date (e.g., January 2022 - Present)</div>
+    <div class="blank"></div>
+    <div class="job-date">Feb 2023 - Aug 2023</div>
+    <div class="job-header1">Your Job Title</div>
     <ul class="job-experience">
-      <li>Work experience point 1.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua.</li>
       <li>Work experience point 2.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua.</li>
       <!-- Add more points as needed -->
+    
     </ul>
+    <div id = "bubble-container">
+      <div class="bubble"> Java </div>
+      <div class="bubble"> Docker </div>
+      <div class="bubble"> Scripting (Python) </div>
+      <div class="bubble"> SQL </div>
+    </div>
 
-    <div class="job-header">Your Job Title 3</div>
-    <div class="job-date">Date (e.g., January 2022 - Present)</div>
+    <div class="blank"></div>
+    <div class="job-date">Feb 2023 - Aug 2023</div>
+    <div class="job-header1">Your Job Title</div>
     <ul class="job-experience">
-      <li>Work experience point 1.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua.</li>
       <li>Work experience point 2.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua.</li>
       <!-- Add more points as needed -->
+    
     </ul>
+    <div id = "bubble-container">
+      <div class="bubble"> Java </div>
+      <div class="bubble"> Docker </div>
+      <div class="bubble"> Scripting (Python) </div>
+      <div class="bubble"> SQL </div>
+    </div>
 
-    <div class="job-header">Your Job Title 4</div>
-    <div class="job-date">Date (e.g., January 2022 - Present)</div>
+    <div class="blank"></div>
+    <div class="job-date">Feb 2023 - Aug 2023</div>
+    <div class="job-header1">Your Job Title</div>
     <ul class="job-experience">
-      <li>Work experience point 1.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua.</li>
       <li>Work experience point 2.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua.</li>
       <!-- Add more points as needed -->
+    
     </ul>
+    <div id = "bubble-container">
+      <div class="bubble"> Java </div>
+      <div class="bubble"> Docker </div>
+      <div class="bubble"> Scripting (Python) </div>
+      <div class="bubble"> SQL </div>
+    </div>
 
-    <div class="job-header">Your Job Title 5</div>
-    <div class="job-date">Date (e.g., January 2022 - Present)</div>
+    <div class="blank"></div>
+    <div class="job-date">Feb 2023 - Aug 2023</div>
+    <div class="job-header1">Your Job Title</div>
     <ul class="job-experience">
-      <li>Work experience point 1.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua.</li>
       <li>Work experience point 2.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua.</li>
       <!-- Add more points as needed -->
+    
     </ul>
+    <div id = "bubble-container">
+      <div class="bubble"> Java </div>
+      <div class="bubble"> Docker </div>
+      <div class="bubble"> Scripting (Python) </div>
+      <div class="bubble"> SQL </div>
+    </div>
 
-    <div class="job-header">Your Job Title</div>
-    <div class="job-date">Date (e.g., January 2022 - Present)</div>
-    <ul class="job-experience">
-      <li>Work experience point 1.</li>
-      <li>Work experience point 2.</li>
-      <!-- Add more points as needed -->
-    </ul>
-
-    <div class="job-header">Your Job Title</div>
-    <div class="job-date">Date (e.g., January 2022 - Present)</div>
-    <ul class="job-experience">
-      <li>Work experience point 1.</li>
-      <li>Work experience point 2.</li>
-      <!-- Add more points as needed -->
-    </ul>
-
-    <div class="job-header">Your Job Title</div>
-    <div class="job-date">Date (e.g., January 2022 - Present)</div>
-    <ul class="job-experience">
-      <li>Work experience point 1.</li>
-      <li>Work experience point 2.</li>
-      <!-- Add more points as needed -->
-    </ul>
-
-    <div class="job-header">Your Job Title</div>
-    <div class="job-date">Date (e.g., January 2022 - Present)</div>
-    <ul class="job-experience">
-      <li>Work experience point 1.</li>
-      <li>Work experience point 2.</li>
-      <!-- Add more points as needed -->
-    </ul>
   </div>
 
+<!--------- contact -------->
+<div id="contact">
+  <div class="container">
+    <h1 class="sub-title-contact">Contact Me</h1>
+    <div class="flex-container">
+      <div class="contact-left">
+        <div class="con">
+          <i class="fas fa-paper-plane"></i>
+          <span class="text"> <a href="mailto:v42li@uwaterloo.ca" style="color: white;">v42li@uwaterloo.ca</a></span>
+        </div>
+        <div class="con2">
+          <i class="fas fa-phone"></i>
+          <span class="text"> 647-517-2938</span>
+        </div>
+        <a href="images/my-cv.pdf" download class="btn btn2">Download Resume/CV</a>
+      </div>
+      
+      <div class="contact-right">
+        <iframe src="linkedin.html" width="400" height="300" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
 
+<div class="icon-container" style="display: none;">
+  <i class="fas fa-arrow-circle-up" onclick=scrollToTop()></i>
+  <span class="text">Go to Top</span>
+</div>
+
+<!-- SCRIPTS -->
 
 <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
+  const highlightedSection = document.querySelector('.highlighted-section');
 
+// Listen for mouse movement
+document.addEventListener('mousemove', function(event) {
+  // Calculate the gradient size based on the cursor position
+  const gradientSize = Math.min(window.innerWidth, window.innerHeight) / 2;
+
+  // Calculate the position of the radial gradient based on the cursor's coordinates
+  const gradientX = event.clientX - gradientSize / 2;
+  const gradientY = event.clientY - gradientSize / 2;
+
+  // Apply the radial gradient style to create the ombre effect
+  highlightedSection.style.background = `radial-gradient(circle at ${event.clientX}px ${event.clientY}px, #4c67915a 20%, #0c246e 70%)`;
+});
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu")
+
+  function openmenu() {
+    sidemenu.style.right = "0"
+  }
+  function closemenu() {
+    sidemenu.style.right = "-200px"
+  }
 </script>
 
 <script>
@@ -147,13 +221,38 @@
       var targetSection = document.getElementById(sectionId);
   
       // Using the smooth scroll behavior for a smooth scrolling effect
-      targetSection.scrollIntoView({
-        behavior: 'smooth'
-      });
+      
+      targetSection.scrollIntoView({ behavior: 'smooth' });
     }
   </script>
 
+<script>
+// Function to scroll to the top
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+</script>
 
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
+<script>
+function showOnScroll() {
+  var hiddenDivs = document.querySelectorAll('.icon-container');
+  for (var i = 0; i < hiddenDivs.length; i++) {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      hiddenDivs[i].style.display = 'block'; // Show the element
+    } else {
+      hiddenDivs[i].style.display = 'none'; // Hide the element
+    }
+  }
+}
+
+// Add event listener for scroll events
+window.addEventListener('scroll', showOnScroll);
+</script>
 
 </body>
 </html>
