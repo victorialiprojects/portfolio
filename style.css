@@ -10,8 +10,6 @@ body{
 }
 
 /* Style for the highlighted section */
-
-/* Style for the highlighted section */
 .highlighted-section {
   position: fixed;
   top: 0;
@@ -36,9 +34,7 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.logo {
-  width: 140px;
-}
+
 nav ul li {
   display: inline-block;
   list-style: none;
